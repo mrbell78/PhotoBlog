@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetupActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:id="@+id/setup_toolbar"
+        />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"
+        android:id="@+id/setup_progressBar"
+        android:visibility="invisible"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setup_profileimage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="130dp"
+        android:src="@drawable/default_image" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/setup_profileimage"
+        android:layout_marginTop="60dp"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:hint="Your Name.."
+        android:textColorHint="@color/whiteColorTransparent"
+        android:id="@+id/setup_edtName"
+        android:inputType="text"
+        />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setup_edtName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Save Account Settings"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:id="@+id/setup_savebtn"
+        android:padding="15dp"
+        />
+
+
+
+</RelativeLayout>

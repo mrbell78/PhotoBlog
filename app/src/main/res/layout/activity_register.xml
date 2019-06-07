@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".RegisterActivity">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:id="@+id/register_progressBar"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/register_logo"
+        android:layout_marginTop="64dp"
+        android:id="@+id/register_logo_imageview"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="your email address...."
+        android:layout_marginTop="64dp"
+        android:padding="15dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:textColorHint="@color/whiteColorTransparent"
+        android:textColor="@android:color/white"
+        android:id="@+id/register_edtEmail"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pasword...."
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:textColorHint="@color/whiteColorTransparent"
+        android:textColor="@android:color/white"
+        android:id="@+id/register_edtPassword"
+        android:inputType="textPassword"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Pasword...."
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:textColorHint="@color/whiteColorTransparent"
+        android:textColor="@android:color/white"
+        android:id="@+id/register_edtConfirmpassword"
+        android:inputType="textPassword"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:padding="18dp"
+        android:text="Create new Account"
+        android:textAllCaps="false"
+        android:background="@android:color/white"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:id="@+id/register_CreateAccount"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:padding="18dp"
+        android:text="Need a New Account"
+        android:textAllCaps="false"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:id="@+id/register_Accountexist"
+        />
+
+</LinearLayout>

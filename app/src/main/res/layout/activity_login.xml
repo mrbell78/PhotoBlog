@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".LoginActivity">
+    
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_progressBar"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:backgroundTint="@color/colorAccent"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_page_logo"
+        android:layout_marginTop="64dp"
+        android:id="@+id/login_logo_imageview"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="your email address...."
+        android:layout_marginTop="64dp"
+        android:padding="15dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:textColorHint="@color/whiteColorTransparent"
+        android:textColor="@android:color/white"
+        android:id="@+id/login_edtEmail"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pasword...."
+        android:layout_marginTop="64dp"
+        android:padding="15dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:textColorHint="@color/whiteColorTransparent"
+        android:textColor="@android:color/white"
+        android:id="@+id/login_edtPassword"
+        android:inputType="textPassword"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:padding="18dp"
+        android:text="Login to Account"
+        android:textAllCaps="false"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:id="@+id/login_signin_btn"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:padding="18dp"
+        android:text="Need a New Account"
+        android:textAllCaps="false"
+        android:background="@android:color/white"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:id="@+id/login_CreateAccount"
+        />
+
+</LinearLayout>
