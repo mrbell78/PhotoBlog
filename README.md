@@ -11,7 +11,7 @@ login UI
 
 
 Create Account UI
-![Screenshot_20190613-093804_PhotoBlog](https://user-images.githubusercontent.com/40673494/59402220-3fca4000-8dbf-11e9-94fc-0ff049f280f4.jpg)
+![Screenshot_20190614-003337_PhotoBlog](https://user-images.githubusercontent.com/40673494/59458701-cffa9a80-8e3c-11e9-922b-4e85dc958346.jpg)
 
 
 
