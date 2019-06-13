@@ -1,5 +1,5 @@
-# PhotoBlog is a online realtime Blogging where a registed user can post a blog with a photo/image as many  as they want along with a description
-and those phote will be displayed on PhotoBlog newfeed . there has a previlage of like comment option of respective post.
+# PhotoBlog 
+PhotoBlog is a online realtime Blogging where a registed user can post a blog with a photo/image as many  as they want along with a description and those photo will be displayed on PhotoBlog new feed . there has a previlage of like comment option of a respective post.
 
 login UI
 ![Screenshot_20190613-083841_PhotoBlog](https://user-images.githubusercontent.com/40673494/59400756-59b55400-8dba-11e9-98fa-2de4e56847a4.jpg)
