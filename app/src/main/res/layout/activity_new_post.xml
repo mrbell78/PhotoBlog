@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewPostActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/newPost_Toolbar"
+
+        />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newPostProgressBar"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_below="@+id/newPost_Toolbar"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/newpostdefaultimage"
+        android:scaleType="centerCrop"
+        android:id="@+id/newPost_imageview"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/newPostProgressBar"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:hint="Add Description"
+        android:inputType="text"
+        android:layout_marginTop="15dp"
+        android:id="@+id/newPost_edtDescription"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/newPost_imageview"
+        android:textColorHint="#3A3939"
+        android:textColor="#360303"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+
+        android:layout_marginTop="60dp"
+        android:background="@color/colorAccent"
+        android:text="Post Blog"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/newPostbtn"
+        android:layout_below="@+id/newPost_edtDescription"
+
+        />
+
+</RelativeLayout>

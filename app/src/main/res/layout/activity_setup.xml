@@ -13,6 +13,7 @@
         android:minHeight="?attr/actionBarSize"
         android:background="@color/colorPrimary"
         android:id="@+id/setup_toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         />
     <ProgressBar
         android:layout_width="match_parent"

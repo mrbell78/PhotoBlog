@@ -57,9 +57,12 @@ public class LoginActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
+
+
+
                                 Toast.makeText(LoginActivity.this, "Congrats! u signed in", Toast.LENGTH_SHORT).show();
                                 loginProgressBar.setVisibility(View.INVISIBLE);
-                                sendTomain();
+                               sendTomain();
 
                             }
                             else {
@@ -75,6 +78,10 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+    private void sendTosetting() {
+        startActivity(new Intent(getApplicationContext(),SetupActivity.class));
+    }
+
     private void sendToregister() {
         startActivity(new Intent(getApplicationContext(),RegisterActivity.class));
         finish();
@@ -84,14 +91,15 @@ public class LoginActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        sendTomain();
+        FirebaseUser currentUser =mAuth.getCurrentUser();
+        if(currentUser!=null){
+            sendTomain();
+        }
     }
 
     private void sendTomain() {
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser!=null){
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
-            finish();
-        }
-    }
+        Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
+        startActivity(mainIntent);
+        finish();
+}
 }

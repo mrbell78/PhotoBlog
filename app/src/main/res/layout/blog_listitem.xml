@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/blog_listView">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="9dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/profile_placeholder"
+            android:layout_marginLeft="6dp"
+            android:id="@+id/layoutprofileimage"
+            android:layout_marginTop="5dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/profileimagelinier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="92dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/layotheadingtext"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="Mainheading"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/layouttimetext"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="2dp"
+                android:text="Blog Post Date"
+                android:textSize="15sp"
+                android:textStyle="normal"
+
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/post_placeholder"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="0dp"
+            android:id="@+id/layoutimageshow"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="285dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut quam non lorem blandit maximus at et nisi. Nunc nibh mi, pretium "
+            android:id="@+id/layoutdesctext"
+
+            />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

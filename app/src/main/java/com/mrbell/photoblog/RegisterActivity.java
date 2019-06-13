@@ -59,8 +59,7 @@ public class RegisterActivity extends AppCompatActivity {
                              @Override
                              public void onComplete(@NonNull Task<AuthResult> task) {
                                  if(task.isSuccessful()){
-                                     startActivity(new Intent(getApplicationContext(),SetupActivity.class));
-                                     finish();
+                                    sendTomain();
                                      Toast.makeText(RegisterActivity.this, "Registration Succesful", Toast.LENGTH_SHORT).show();
                                      register_progressBar.setVisibility(View.INVISIBLE);
                                  }else{
